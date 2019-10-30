@@ -16,7 +16,7 @@ var io = require('socket.io')(server);
 io.on('connection', function(socket) {
   socket.on('message', function(msg) {
     //msg=msg+"hello";
-    var s1="";
+    var s1="hhh";
     for(let i=msg.size()-1;i>=0;i--){
       s1=s1+msg[i];
     }
