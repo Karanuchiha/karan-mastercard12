@@ -15,7 +15,7 @@ var io = require('socket.io')(server);
 
 io.on('connection', function(socket) {
   socket.on('message', function(msg) {
-    msg=msg+"hello";
-    io.emit('message', msg);
+    //msg=msg+"hello";
+    io.emit('message', "hello");
   });
 });
